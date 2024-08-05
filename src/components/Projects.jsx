@@ -1,11 +1,10 @@
 import { NavLink } from "react-router-dom";
-import CatsNCheese from "../assets/projects/cats-n-cheese.png";
-import Project2 from "../assets/clipboard-landing-page.png";
-import Project3 from "../assets/clipboard-landing-page.png";
-import Project4 from "../assets/clipboard-landing-page.png";
+import projectsInfo from "../data/ProjectsInfo";
 import ProjectCard from "./ProjectCard.jsx";
 
 const Projects = () => {
+  const projects = projectsInfo.slice(0, 4);
+
   return (
     <section className="py-10 w-full border-b-2" id="projects">
       <div className=" px-10">
@@ -13,42 +12,17 @@ const Projects = () => {
           Recent Projects
         </h2>
         <div className="w-full flex flex-col items-center gap-y-5 md:grid md:grid-cols-2 md:gap-x-5 ">
-          <ProjectCard
-            image={CatsNCheese}
-            projectName="Cats-N-Cheese Game"
-            liveUrl={"https://cats-n-cheese.vercel.app/"}
-            githubUrl={"https://github.com/sylfort/cats-n-cheese"}
-            stack={["HTML", "CSS", "JS"]}
-            data-aos="fade-right"
-          />
-          <ProjectCard
-            image={Project2}
-            projectName="Interactive Rating Component"
-            liveUrl={"http://advice-generator-lake.vercel.app/"}
-            githubUrl={"https://github.com/iamzaidmohammed/advice-generator"}
-            stack={["HTML", "CSS", "JS"]}
-            data-aos="fade-left"
-          />
-          <ProjectCard
-            image={Project3}
-            projectName="Product Card Preview Component"
-            liveUrl={"http://product-card-preview-component.vercel.app/"}
-            githubUrl={
-              "https://github.com/iamzaidmohammed/product-card-preview-component"
-            }
-            stack={["HTML", "CSS", "JS"]}
-            data-aos="fade-right"
-          />
-          <ProjectCard
-            image={Project4}
-            projectName="Clipboard Landing Page"
-            liveUrl={"http://clipboard-landing-page-alpha-six.vercel.app/"}
-            githubUrl={
-              "https://github.com/iamzaidmohammed/clipboard-landing-page"
-            }
-            stack={["HTML", "CSS", "JS"]}
-            data-aos="fade-left"
-          />
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              image={project.image}
+              projectName={project.name}
+              liveUrl={project.liveUrl}
+              githubUrl={project.githubUrl}
+              stack={project.stack}
+              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+            />
+          ))}
         </div>
 
         <NavLink
