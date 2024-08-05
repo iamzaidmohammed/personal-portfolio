@@ -1,5 +1,3 @@
-// import { FaGithub, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
-
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
