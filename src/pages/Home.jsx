@@ -1,5 +1,6 @@
 import HeroImg from "../assets/hero-img.webp";
 import Skills from "../components/Skills";
+import Projects from "../components/Projects.jsx";
 
 const Home = () => {
   return (
@@ -33,6 +34,8 @@ const Home = () => {
         </section>
 
         <Skills />
+
+        <Projects />
       </section>
     </main>
   );

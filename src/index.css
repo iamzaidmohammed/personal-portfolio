@@ -9,6 +9,10 @@
   font-family: "syne mono", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   font-family: "caveat", sans-serif;
 }
