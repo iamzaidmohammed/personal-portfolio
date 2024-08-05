@@ -1,8 +1,15 @@
 import PropTypes from "prop-types";
 
-const ProjectCard = ({ image, projectName, liveUrl, githubUrl, stack }) => {
+const ProjectCard = ({
+  image,
+  projectName,
+  liveUrl,
+  githubUrl,
+  stack,
+  "data-aos": aos,
+}) => {
   return (
-    <div className="bg-NavColor h-full flex flex-col">
+    <div className="bg-NavColor h-full flex flex-col" data-aos={aos}>
       <div className="overflow-hidden cursor-pointer h-48">
         <img
           src={image}
@@ -47,6 +54,7 @@ ProjectCard.propTypes = {
   liveUrl: PropTypes.string.isRequired,
   githubUrl: PropTypes.string.isRequired,
   stack: PropTypes.array.isRequired,
+  "data-aos": PropTypes.string,
 };
 
 export default ProjectCard;

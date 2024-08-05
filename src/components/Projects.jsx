@@ -19,6 +19,7 @@ const Projects = () => {
             liveUrl={"https://cats-n-cheese.vercel.app/"}
             githubUrl={"https://github.com/sylfort/cats-n-cheese"}
             stack={["HTML", "CSS", "JS"]}
+            data-aos="fade-right"
           />
           <ProjectCard
             image={Project2}
@@ -26,6 +27,7 @@ const Projects = () => {
             liveUrl={"http://advice-generator-lake.vercel.app/"}
             githubUrl={"https://github.com/iamzaidmohammed/advice-generator"}
             stack={["HTML", "CSS", "JS"]}
+            data-aos="fade-left"
           />
           <ProjectCard
             image={Project3}
@@ -35,6 +37,7 @@ const Projects = () => {
               "https://github.com/iamzaidmohammed/product-card-preview-component"
             }
             stack={["HTML", "CSS", "JS"]}
+            data-aos="fade-right"
           />
           <ProjectCard
             image={Project4}
@@ -44,6 +47,7 @@ const Projects = () => {
               "https://github.com/iamzaidmohammed/clipboard-landing-page"
             }
             stack={["HTML", "CSS", "JS"]}
+            data-aos="fade-left"
           />
         </div>
 

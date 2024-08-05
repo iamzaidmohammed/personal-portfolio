@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section className="border-b-2">
       <div className="w-full flex flex-col gap-5 py-40 px-3 lg:px-10 lg:flex-row lg:items-center lg:gap-20">
-        <div className="text-center basis-1/2">
+        <div className="text-center basis-1/2" data-aos="fade-right">
           <h2 className="text-6xl">Contact</h2>
           <p>
             {`I would love to hear about your projects and how I can help you.
@@ -13,7 +13,7 @@ const Contact = () => {
             possible.`}
           </p>
         </div>
-        <div className="mx-auto basis-1/2">
+        <div className="mx-auto basis-1/2" data-aos="fade-left">
           <a
             className="flex gap-5 mb-10"
             href="mailto:zainudeenzaidmohammed7@gmail.com"

@@ -6,19 +6,33 @@ const Skills = () => {
       </h2>
       <div className="w-full text-center text-2xl md:text-3xl lg:text-5xl flex flex-col ">
         <div className="md:w-full xs:flex items-center justify-around md:mb-10">
-          <p className="md:basis-1/2 mb-5 md:mb-0">HTML</p>
-          <p className="md:basis-1/2 mb-5 md:mb-0">CSS</p>
+          <p className="md:basis-1/2 mb-5 md:mb-0" data-aos="fade-right">
+            HTML
+          </p>
+          <p className="md:basis-1/2 mb-5 md:mb-0" data-aos="fade-left">
+            CSS
+          </p>
         </div>
         <div className="md:w-full xs:flex items-center justify-around md:mb-10">
-          <p className="mb-5 md:basis-1/2 md:mb-0">TAILWIND</p>
-          <p className="mb-5 md:basis-1/2 md:mb-0">JAVASCRIPT</p>
+          <p className="mb-5 md:basis-1/2 md:mb-0" data-aos="fade-right">
+            TAILWIND
+          </p>
+          <p className="mb-5 md:basis-1/2 md:mb-0" data-aos="fade-left">
+            JAVASCRIPT
+          </p>
         </div>
         <div className="md:w-full xs:flex items-center justify-around md:mb-10">
-          <p className="mb-5 md:basis-1/2 md:mb-0">REACT</p>
-          <p className="mb-5 md:basis-1/2 md:mb-0">PHP</p>
+          <p className="mb-5 md:basis-1/2 md:mb-0" data-aos="fade-right">
+            REACT
+          </p>
+          <p className="mb-5 md:basis-1/2 md:mb-0" data-aos="fade-left">
+            PHP
+          </p>
         </div>
         <div className="md:w-full xs:flex items-center justify-around md:mb-10">
-          <p className="mb-5 md:basis-1/2 md:mb-0">MYSQL</p>
+          <p className="mb-5 md:basis-1/2 md:mb-0" data-aos="fade-right">
+            MYSQL
+          </p>
           <p className="mb-5 md:basis-1/2 md:mb-0"></p>
         </div>
       </div>
