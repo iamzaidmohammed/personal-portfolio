@@ -10,7 +10,7 @@ const Projects = () => {
     <section className="py-10 w-full border-b-2" id="projects">
       <div className=" px-10">
         <h2 className="w-fit mx-auto text-6xl border-b-2 border-b-NeonGreen mb-10">
-          Projects
+          Recent Projects
         </h2>
         <div className="w-full flex flex-col items-center gap-y-5 md:grid md:grid-cols-2 md:gap-x-5 ">
           <ProjectCard
