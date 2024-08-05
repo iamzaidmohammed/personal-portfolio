@@ -1,4 +1,3 @@
-// import HeroImg from "./assets/hero-img.png";
 import {
   Route,
   createBrowserRouter,
