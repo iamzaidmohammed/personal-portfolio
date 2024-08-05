@@ -1,4 +1,5 @@
 import HeroImg from "../assets/hero-img.webp";
+import Skills from "../components/Skills";
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
             </p>
 
             <a href="#projects">
-              <button className="mt-5 border-b-2 border-b-NeonGreen">
+              <button className="mt-5 mb-8 sm:mb-0 border-b-2 border-b-NeonGreen">
                 Recent Projects
               </button>
             </a>
@@ -30,6 +31,8 @@ const Home = () => {
             <img src={HeroImg} alt="hero section image" />
           </div>
         </section>
+
+        <Skills />
       </section>
     </main>
   );
