@@ -54,8 +54,8 @@ const Projects = () => {
               All Projects
             </h2>
 
-            <div className="mb-10 flex items-center gap-2 w-full">
-              <div className="relative w-full">
+            <div className="w-full flex flex-col items-center gap-2 mb-10 sm:flex-row sm:gap-2">
+              <div className="relative w-full basis-2/3">
                 <span className="h-full absolute inset-y-0 left-0 flex items-center pl-2 text-NeonGreen">
                   <FaSearch />
                 </span>
@@ -66,71 +66,74 @@ const Projects = () => {
                   className="appearance-none w-full rounded-l sm:rounded-l-none border-2 block pl-8 pr-6 py-2 bg-white text-sm placeholder-gray-400 text-gray-700 focus:bg-white border-NeonGreen focus:border-2 focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none"
                 />
               </div>
-              <div className="relative">
-                <button
-                  className="flex items-center justify-between bg-NeonGreen text-DarkMode sm:py-2 text-center sm:px-4 sm:w-[150px]"
-                  onClick={() => {
-                    setToggleSort(!toggleSort);
-                    setToggleFilter(false);
-                  }}
-                >
-                  Sort By {toggleSort ? <FaAngleUp /> : <FaAngleDown />}
-                </button>
-                {toggleSort && (
-                  <div className="absolute right-0 mt-2 w-[150px] bg-white text-DarkMode rounded shadow-lg z-10">
-                    <button
-                      className="block w-full text-left px-4 py-2 hover:bg-NeonGreen"
-                      onClick={() => handleSort("Most Recent")}
-                    >
-                      Most Recent
-                    </button>
-                    <button
-                      className="block w-full text-left px-4 py-2 hover:bg-NeonGreen"
-                      onClick={() => handleSort("Name")}
-                    >
-                      Name
-                    </button>
-                  </div>
-                )}
-              </div>
 
-              <div className="relative">
-                <button
-                  className="flex items-center justify-between bg-NeonGreen text-DarkMode sm:py-2 text-center sm:px-4 sm:w-[150px] sm:rounded-r"
-                  onClick={() => {
-                    setToggleFilter(!toggleFilter);
-                    setToggleSort(false);
-                  }}
-                >
-                  Filter By {toggleFilter ? <FaAngleUp /> : <FaAngleDown />}
-                </button>
-                {toggleFilter && (
-                  <div className="absolute right-0 mt-2 w-[150px] bg-white text-DarkMode rounded shadow-lg z-10">
-                    {[
-                      "HTML",
-                      "CSS",
-                      "Tailwind",
-                      "JS",
-                      "React",
-                      "API",
-                      "PHP",
-                      "MySQL",
-                    ].map((filter) => (
-                      <label
-                        key={filter}
-                        className="block w-full text-left px-4 py-2 cursor-pointer hover:bg-NeonGreen"
+              <div className="flex items-center justify-center  sm:justify-end gap-2 w-full basis-1/3">
+                <div className="relative">
+                  <button
+                    className="flex items-center justify-between bg-NeonGreen text-DarkMode text-center p-2 sm:w-[150px]"
+                    onClick={() => {
+                      setToggleSort(!toggleSort);
+                      setToggleFilter(false);
+                    }}
+                  >
+                    Sort By {toggleSort ? <FaAngleUp /> : <FaAngleDown />}
+                  </button>
+                  {toggleSort && (
+                    <div className="absolute right-0 mt-2 w-[150px] bg-white text-DarkMode rounded shadow-lg z-10">
+                      <button
+                        className="block w-full text-left px-4 py-2 hover:bg-NeonGreen"
+                        onClick={() => handleSort("Most Recent")}
                       >
-                        <input
-                          type="checkbox"
-                          checked={selectedFilters.includes(filter)}
-                          onChange={() => handleFilterChange(filter)}
-                          className="mr-2"
-                        />
-                        {filter}
-                      </label>
-                    ))}
-                  </div>
-                )}
+                        Most Recent
+                      </button>
+                      <button
+                        className="block w-full text-left px-4 py-2 hover:bg-NeonGreen"
+                        onClick={() => handleSort("Name")}
+                      >
+                        Name
+                      </button>
+                    </div>
+                  )}
+                </div>
+
+                <div className="relative">
+                  <button
+                    className="flex items-center justify-between bg-NeonGreen text-DarkMode text-center p-2 sm:w-[150px] sm:rounded-r"
+                    onClick={() => {
+                      setToggleFilter(!toggleFilter);
+                      setToggleSort(false);
+                    }}
+                  >
+                    Filter By {toggleFilter ? <FaAngleUp /> : <FaAngleDown />}
+                  </button>
+                  {toggleFilter && (
+                    <div className="absolute right-0 mt-2 w-[150px] bg-white text-DarkMode rounded shadow-lg z-10">
+                      {[
+                        "HTML",
+                        "CSS",
+                        "Tailwind",
+                        "JS",
+                        "React",
+                        "API",
+                        "PHP",
+                        "MySQL",
+                      ].map((filter) => (
+                        <label
+                          key={filter}
+                          className="block w-full text-left px-4 py-2 cursor-pointer hover:bg-NeonGreen"
+                        >
+                          <input
+                            type="checkbox"
+                            checked={selectedFilters.includes(filter)}
+                            onChange={() => handleFilterChange(filter)}
+                            className="mr-2"
+                          />
+                          {filter}
+                        </label>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
 

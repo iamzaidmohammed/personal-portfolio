@@ -45,13 +45,18 @@ const Navbar = () => {
             } xs:hidden fixed right-0 z-40 top-12 w-1/2 bg-NavColor`}
           >
             <div className="px-5 pt-1 pb-2 flex flex-col gap-3">
-              <NavLink to="/" className={"w-full py-2 px-4 hover:bg-DarkMode"}>
+              <NavLink
+                to="/"
+                className={"w-full py-2 px-4 hover:bg-DarkMode"}
+                onClick={() => setToggleMenu(false)}
+              >
                 Home
               </NavLink>
 
               <NavLink
                 to="/projects"
                 className={"w-full py-2 px-4 hover:bg-DarkMode"}
+                onClick={() => setToggleMenu(false)}
               >
                 Projects
               </NavLink>
