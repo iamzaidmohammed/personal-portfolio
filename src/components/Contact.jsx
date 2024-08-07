@@ -20,7 +20,7 @@ const Contact = () => {
             target="__blank"
           >
             <IoMail />{" "}
-            <p className="border-b-2 border-b-NeonGreen hover:border-b-white hover:text-NeonGreen transition-all">
+            <p className="border-b-2 border-b-accent hover:border-b-white hover:text-accent transition-all">
               zainudeenzaidmohammed7@gmail.com
             </p>
           </a>
@@ -30,7 +30,7 @@ const Contact = () => {
             target="__blank"
           >
             <FaWhatsapp />{" "}
-            <p className="border-b-2 border-b-NeonGreen hover:border-b-white hover:text-NeonGreen transition-all">
+            <p className="border-b-2 border-b-accent hover:border-b-white hover:text-accent transition-all">
               +233 59 730 8850
             </p>
           </a>

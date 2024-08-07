@@ -1,7 +1,7 @@
 const Skills = () => {
   return (
     <section className="mt-10 w-full border-b-2">
-      <h2 className="w-fit mx-auto text-6xl border-b-2 border-b-NeonGreen mb-10">
+      <h2 className="w-fit mx-auto text-6xl border-b-2 border-b-accent mb-10">
         Skills
       </h2>
       <div className="w-full text-center text-2xl md:text-3xl lg:text-5xl flex flex-col ">

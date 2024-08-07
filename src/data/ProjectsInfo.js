@@ -15,6 +15,8 @@ const ProjectsInfo = [
     stack: ["React", "Tailwind"],
     liveUrl: "https://cats-n-cheese.vercel.app/",
     githubUrl: "https://github.com/sylfort/cats-n-cheese",
+    featured: true,
+    description: `Cats-N-Cheese is a single-player game where players act as mice stealing cheese from cats, it's all about strategy and fun!`,
   },
   {
     name: "Football Team Dashboard",
@@ -22,6 +24,8 @@ const ProjectsInfo = [
     stack: ["React", "Tailwind", "PHP", "MySQL"],
     liveUrl: "https://football-team-dashboard.vercel.app/",
     githubUrl: "https://github.com/iamzaidmohammed/football-team-dashboard",
+    featured: true,
+    description: `This project is a web application that allows users to view and manage their football team. The data is stored in a MySQL database using PHP and is displayed using React and Tailwind.`,
   },
   {
     name: "Countries API",
@@ -29,6 +33,8 @@ const ProjectsInfo = [
     stack: ["React", "CSS", "API"],
     liveUrl: "https://countries-api-snowy-pi.vercel.app",
     githubUrl: "https://github.com/iamzaidmohammed/countries-api",
+    featured: true,
+    description: `Countries API is a web application that allows users to search for countries by name, region, or subregion. The data is fetched from an external API. Users can also view country details and flags.`,
   },
   {
     name: "Advice Generator",
@@ -36,6 +42,8 @@ const ProjectsInfo = [
     stack: ["React", "Tailwind", "API"],
     liveUrl: "https://advice-generator-lake.vercel.app/",
     githubUrl: "https://github.com/iamzaidmohammed/advice-generator",
+    featured: true,
+    description: `Advice Generator is a web application that generates random advice. The data is fetched from an external API. The advice is displayed using React and Tailwind.`,
   },
   {
     name: "Interactive Rating Component",
@@ -43,6 +51,8 @@ const ProjectsInfo = [
     stack: ["HTML", "CSS", "JS"],
     liveUrl: "https://interactive-rating-component-chi-one.vercel.app/",
     githubUrl: "https://github.com/iamzaidmohammed/Interative-Rating-Component",
+    featured: false,
+    description: `Interactive Rating Component is a simple web app where users rate a product.`,
   },
   {
     name: "Newsletter Sign Up Form with Success Message",
@@ -52,6 +62,8 @@ const ProjectsInfo = [
       "https://newsletter-sign-up-form-with-success-message-henna.vercel.app/",
     githubUrl:
       "https://github.com/iamzaidmohammed/Newsletter-sign-up-form-with-success-message",
+    featured: false,
+    description: `This project is a web application that allows users to sign up for newsletter.`,
   },
   {
     name: "Clipboard Landing Page",
@@ -59,6 +71,8 @@ const ProjectsInfo = [
     stack: ["HTML", "CSS"],
     liveUrl: "https://clipboard-landing-page-alpha-six.vercel.app/",
     githubUrl: "https://github.com/iamzaidmohammed/clipboard-landing-page",
+    featured: false,
+    description: `Clipboard Landing Page is a landing page for a hypothetical mobile app.`,
   },
   {
     name: "Huddle Landing Page",
@@ -66,6 +80,8 @@ const ProjectsInfo = [
     stack: ["HTML", "CSS"],
     liveUrl: "https://huddle-landing-page-psi-pink.vercel.app/",
     githubUrl: "https://github.com/iamzaidmohammed/huddle-landing-page",
+    featured: false,
+    description: `Huddle Landing Page is a landing page for a hypothetical social media platform.`,
   },
   {
     name: "Recipe Page",
@@ -73,6 +89,8 @@ const ProjectsInfo = [
     stack: ["HTML", "CSS"],
     liveUrl: "https://recipe-page-mocha-one.vercel.app/",
     githubUrl: "https://github.com/iamzaidmohammed/recipe-page",
+    featured: false,
+    description: `Recipe Page is a website that shows a recipe for a dish.`,
   },
 ];
 

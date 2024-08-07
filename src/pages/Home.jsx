@@ -5,7 +5,7 @@ import Contact from "../components/Contact.jsx";
 
 const Home = () => {
   return (
-    <main className="bg-DarkMode text-white">
+    <main className="bg-primary text-white">
       <section className="max-w-7xl flex flex-col items-center md:px-5 lg:px-20 xl:mx-auto">
         <section className="px-5 flex flex-col-reverse items-center sm:flex-row border-b-2">
           <div
@@ -18,7 +18,7 @@ const Home = () => {
             </h3>
             <p>
               I am a{" "}
-              <span className="border-b-2 border-b-NeonGreen">
+              <span className="border-b-2 border-b-accent">
                 Full Stack Developer
               </span>{" "}
               based in Ghana with 3+ years experience building well tested
@@ -26,8 +26,8 @@ const Home = () => {
             </p>
 
             <a href="#projects">
-              <button className="mt-5 mb-8 sm:mb-0 border-b-2 border-b-NeonGreen">
-                Recent Projects
+              <button className="mt-5 mb-8 sm:mb-0 border-b-2 border-b-accent">
+                Featured Projects
               </button>
             </a>
           </div>

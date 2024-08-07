@@ -8,7 +8,7 @@ const NotFound = () => {
         <h2 className="text-3xl mt-2 mb-5">
           Oops!! The page you are looking for does not exist.
         </h2>
-        <Link to="/" className="border-b-2 border-b-NeonGreen">
+        <Link to="/" className="border-b-2 border-b-accent">
           Go To Homepage
         </Link>
       </div>

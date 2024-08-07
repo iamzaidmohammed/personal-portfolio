@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        NeonGreen: "hsl(150, 100%, 66%)",
-        DarkMode: "#003049",
-        NavColor: "#002039",
+        primary: "#003049",
+        secondary: "#002039",
+        accent: "#5286ff",
       },
       backgroundImage: {
         heroBg: "url('/src/images/circles.svg')",

@@ -5,17 +5,17 @@ import { useState } from "react";
 const Navbar = () => {
   const linkClass = ({ isActive }) =>
     isActive
-      ? "border-b-2 border-b-NeonGreen hover:border-b-NeonGreen transition-colors"
-      : "hover:border-b-2 hover:border-b-NeonGreen transition-colors";
+      ? "border-b-2 border-b-accent hover:border-b-accent transition-colors"
+      : "hover:border-b-2 hover:border-b-accent transition-colors";
 
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-NavColor text-white shadow-sm py-3">
+    <nav className="sticky top-0 z-50 bg-secondary text-white shadow-sm py-3">
       <div className="max-w-7xl flex items-center md:px-5 lg:px-20 xl:mx-auto">
         <div className="flex justify-between items-center w-full px-5">
           <div>
-            <a href="/" className="logo text-2xl">
+            <a href="/" className="logo text-2xl text-accent">
               iamzaidmohammed
             </a>
           </div>
@@ -42,12 +42,12 @@ const Navbar = () => {
           <div
             className={`${
               toggleMenu ? "block" : "hidden"
-            } xs:hidden fixed right-0 z-40 top-12 w-1/2 bg-NavColor`}
+            } xs:hidden fixed right-0 z-40 top-12 w-1/2 bg-secondary`}
           >
             <div className="px-5 pt-1 pb-2 flex flex-col gap-3">
               <NavLink
                 to="/"
-                className={"w-full py-2 px-4 hover:bg-DarkMode"}
+                className={"w-full py-2 px-4 hover:bg-primary"}
                 onClick={() => setToggleMenu(false)}
               >
                 Home
@@ -55,7 +55,7 @@ const Navbar = () => {
 
               <NavLink
                 to="/projects"
-                className={"w-full py-2 px-4 hover:bg-DarkMode"}
+                className={"w-full py-2 px-4 hover:bg-primary"}
                 onClick={() => setToggleMenu(false)}
               >
                 Projects
@@ -74,19 +74,19 @@ export default Navbar;
   /* <div className="flex justify-between">
   <a
     href="https://github.com/iamzaidmohammed"
-    className="mr-4 hover:text-NeonGreen transition-colors"
+    className="mr-4 hover:text-accent transition-colors"
   >
     <FaGithub />
   </a>
   <a
     href="https://twitter.com/iamzaidmohammed"
-    className="mr-4 hover:text-NeonGreen transition-colors"
+    className="mr-4 hover:text-accent transition-colors"
   >
     <FaXTwitter />
   </a>
   <a
     href="https://linkedin.com/iamzaidmohammed"
-    className="hover:text-NeonGreen transition-colors"
+    className="hover:text-accent transition-colors"
   >
     <FaLinkedinIn />
   </a>
