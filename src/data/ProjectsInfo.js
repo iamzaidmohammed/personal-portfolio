@@ -10,6 +10,15 @@ import RecipePage from "../assets/projects/recipe-page.jpg";
 
 const ProjectsInfo = [
   {
+    name: "African Vibes Ecommerce",
+    image: CatsNCheese,
+    stack: ["React", "Tailwind"],
+    liveUrl: "https://africanvibes.com.ng",
+    githubUrl: "https://github.com/iamzaidmohammed/africanvibes",
+    featured: true,
+    description: `African Vibes Ecommerce is a web application that allows users to shop online.`,
+  },
+  {
     name: "Cats-N-Cheese",
     image: CatsNCheese,
     stack: ["React", "Tailwind"],

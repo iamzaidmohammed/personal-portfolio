@@ -42,7 +42,7 @@ const ProjectCard = ({
         <div className="flex justify-start gap-2">
           {stack.map((stack, index) => (
             <small key={index} className="text-gray-400">
-              {`[${stack}]`}
+              {`${stack}`}
             </small>
           ))}
         </div>
