@@ -7,12 +7,13 @@ import HuddleLandingPage from "../assets/projects/huddle-landing-page.png";
 import InteractiveRatingComponent from "../assets/projects/interactive-rating-component.png";
 import NewsletterSignUpForm from "../assets/projects/newsletter-sign-up-form-with-success-messege.png";
 import RecipePage from "../assets/projects/recipe-page.jpg";
+import Africanvibes from "../assets/projects/africanvibes.png";
 
 const ProjectsInfo = [
   {
     name: "African Vibes Ecommerce",
-    image: CatsNCheese,
-    stack: ["React", "Tailwind"],
+    image: Africanvibes,
+    stack: ["React", "Tailwind", "PHP", "MySQL"],
     liveUrl: "https://africanvibes.com.ng",
     githubUrl: "https://github.com/iamzaidmohammed/africanvibes",
     featured: true,
@@ -33,7 +34,7 @@ const ProjectsInfo = [
     stack: ["React", "Tailwind", "PHP", "MySQL"],
     liveUrl: "https://football-team-dashboard.vercel.app/",
     githubUrl: "https://github.com/iamzaidmohammed/football-team-dashboard",
-    featured: true,
+    featured: false,
     description: `This project is a web application that allows users to view and manage their football team. The data is stored in a MySQL database using PHP and is displayed using React and Tailwind.`,
   },
   {
